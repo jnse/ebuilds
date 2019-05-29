@@ -41,6 +41,7 @@ src_compile() {
 src_install() {
 	mkdir -p include/dattobd
 	cp src/*.h include/dattobd/.
+	cp lib/*.h include/dattobd/.
 	doheader -r include/*
 	dolib lib/*.so
 	dolib.a lib/*.a
